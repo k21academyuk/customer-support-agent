@@ -16,11 +16,11 @@ AI-powered customer support system with LangGraph workflow orchestration, RAG (R
 
 ### Prerequisites
 
-- AWS EC2 instance (Ubuntu 24.04 LTS, t2.medium or larger)
+- AWS EC2 instance or Azure Virtual Machine (Ubuntu 24.04 LTS)
 - OpenAI API key
 - Domain name (optional, for HTTPS)
 
-### Deployment on EC2
+### Deployment on Cloud Ubuntu VM
 
 1. **Clone the repository:**
 ```bash
@@ -69,11 +69,11 @@ sudo systemctl restart support-agent
 │   ├── index.html           # Web UI
 │   └── static/              # CSS, JS, images
 └── deployment/
-    ├── ec2/                 # EC2 deployment files
-    │   ├── setup.sh         # Automated setup script
-    │   ├── nginx/           # NGINX configuration
-    │   └── systemd/         # Systemd service
-    └── docker/              # Docker deployment (optional)
+     ├── ec2/                  # EC2 deployment files
+          ├── setup.sh         # Automated setup script
+          ├── nginx/           # NGINX configuration
+          └── systemd/         # Systemd service
+
 ```
 
 ## Configuration
